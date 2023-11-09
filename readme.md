@@ -74,7 +74,7 @@ git log --oneline
 
 ```mermaid 
 flowchart TD;
- A-->B;
+ A--git add-->B;
  B-->C;
  B-->D;
  C-->D;
