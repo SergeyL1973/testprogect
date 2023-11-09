@@ -75,10 +75,10 @@ git log --oneline
 ```mermaid 
 flowchart TD;
  A[Untracked]--git add-->B[Staged];
- B-->C;
- B-->D;
- C-->D;
- D-->B; 
+ B--git commit-->C[Tracked];
+ B--изменение-->D[Modified];
+ C--изменение-->D[Modified];
+ D--git add-->B[Staged]; 
 ```
 
 ## Команда git status
